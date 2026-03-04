@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="theme-color" content="#0b0c10" />
+  <title>5x5+</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="top">
+    <div class="title">5x5+</div>
+    <div class="sub" id="todayLine"></div>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab active" data-tab="today">Today</button>
+    <button class="tab" data-tab="log">Log</button>
+    <button class="tab" data-tab="history">History</button>
+    <button class="tab" data-tab="settings">Settings</button>
+  </nav>
+
+  <main class="wrap">
+    <section id="tab-today" class="panel"></section>
+    <section id="tab-log" class="panel hidden"></section>
+    <section id="tab-history" class="panel hidden"></section>
+    <section id="tab-settings" class="panel hidden"></section>
+  </main>
+
+  <footer class="foot">
+    <button id="exportBtn" class="ghost">Export</button>
+    <label class="ghost fileLabel">
+      Import
+      <input id="importFile" type="file" accept="application/json" />
+    </label>
+    <button id="resetBtn" class="danger">Reset</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
