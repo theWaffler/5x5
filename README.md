@@ -1,6 +1,6 @@
 # 5x5+
 
-A lightweight workout tracker designed for the A/B/C plan on Sunday/Tuesday/Thursday.
+Stronglift 5x5 + accessory workout tracker, focused on hypertrophy
 
 ## Features
 - Shows today's workout (A/B/C) based on day of week
